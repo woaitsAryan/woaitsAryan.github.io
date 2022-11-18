@@ -1,9 +1,76 @@
 <!DOCTYPE html>
-<html lang = "en">
+
+<html lang="en">
     <head>
-        <title>heyo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>My Webpage</title>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                }
+                /* Set the width of the side navigation to 0 */
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                }
+        </script>
     </head>
     <body>
-        Heyooo
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="project.html">Project</a>
+            <a href="education.html">Education</a>
+            <a href="about.html">About me</a>
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">
+            <button type="button" class="btn btn-outline-info">Navigation</button>
+        </span>
+        
+        <div class = "textmain">
+            <p>
+                I'm 
+                <span class = "test">Aryan</span>
+            </p>
+        </div>
+        <div class = "textmain2 test2">
+            <span class = "text-slider-items">
+                Coder, Photo Editor, idk
+            </span>
+            <strong class = "text-slider"></strong>
+        </div>
+        <script src="typed.js/lib/typed.min.js"></script>
+    <!-- Add jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add this script for successful 
+        implementation of typed.js  -->
+        <script>
+            if ($(".text-slider").length == 1) {   
+                var typed_strings = 
+                    $(".text-slider-items").text();
+
+                var typed = new Typed(".text-slider", {
+                    strings: typed_strings.split(", "),
+                    typeSpeed: 50,
+                    loop: true,
+                    backDelay: 900,
+                    backSpeed: 50,
+                });
+            }
+        </script>
+        
+        <div class="container mx-auto px-4 py-4 max-w-lg">
+            <div class = "text-center white">
+                <footer>
+                    © Copyright & Stuff. Made with ❤️
+                </footer>
+            </div>
+        </div>
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+            
+        </div>
     </body>
 </html>
