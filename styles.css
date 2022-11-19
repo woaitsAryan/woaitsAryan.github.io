@@ -71,6 +71,7 @@ font-family: 'Helvetica', 'Arial';
 font-size: 80px;
 line-height: 1.0625;
 font-weight: 600;
+padding-bottom: 0.1em;
 }
 .textmain2 {
 text-align: center;
@@ -81,6 +82,7 @@ font-family: 'Helvetica', 'Arial';
 font-size: 40px;
 line-height: 1.0625;
 font-weight: 600;
+padding-bottom: 1em;
 }
 
 .test{
@@ -135,11 +137,14 @@ max-width: 48rem;
 margin-left: auto;
 margin-right: auto;
 }
-.specific{
+.font{
 font-family:'Times New Roman', Times, serif;
+}
+.font2{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .para{
   font-size: 1.15rem;
-  padding-top: 1.15rem;
+  padding-top: 0.7rem;
   padding-bottom: 1.15rem;
 }
