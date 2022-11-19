@@ -63,6 +63,7 @@ background-size: cover;
 /*  background-image: linear-gradient(to right top, #0d1117, #081223, #04112e, #031038, #0c0c40);*/
 }
 .textmain {
+padding-top: 0.5em;
 text-align: center;
 letter-spacing: -0.009em;
 color: white;
