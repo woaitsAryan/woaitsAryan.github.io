@@ -151,11 +151,13 @@
                         if o1 == None:
                             o1 = wbdata.get_data(n2, country=iso_countries)[2]['value']
                         if o1 == None:
-                            o1 = wbdata.get_data(n2, country=iso_countries)[3]['value'] #Can't believe I need 3 contingencies checking data for as back as 2019, CMON WORLD BANK, UPDATE YOUR FREAKING DATA
+                            o1 = wbdata.get_data(n2, country=iso_countries)[3]['value'] 
+                            #Can't believe I need 3 contingencies checking data for as back as 2019, CMON WORLD BANK, UPDATE YOUR FREAKING DATA
                         global o2
                         o2 = wbdata.get_data(n2, country=iso_countries)[3]['indicator']['value']
                         if o1 == None:
-                            sys.exit("Sorry, even the WorldBank doesn't have the data you're seeking for") #Ain't no way I'm printing data issued before 2019, this is on world bank, not me
+                            sys.exit("Sorry, even the WorldBank doesn't have the data you're seeking for") 
+                            #Ain't no way I'm printing data issued before 2019, this is on world bank, not me
                         o.append(round(o1,1))
                     return o
 
